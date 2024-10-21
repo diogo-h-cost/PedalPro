@@ -1,0 +1,21 @@
+------------------------------- Ambiente virtual
+
+python3.10 -m venv .venv (criar)
+
+source .venv/bin/activate (Ativar)
+
+deactivate (Desativar)
+
+------------------------------- Windows
+
+python -m venv .venv (criar)
+
+.venv\Scripts\activate (Ativar)
+
+------------------------------- Pip
+
+pip install "fastapi[standard]" SQLAlchemy mysql-connector-python "pwdlib[argon2]" twilio
+
+------------------------------- Run server
+
+fastapi dev main.py
